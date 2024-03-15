@@ -43,15 +43,16 @@ O/P :- 10 classes.
 ## MNIST dataset 
 MNIST is a dataset of handwritten digits from 0-9.
 
-![image](https://github.com/ShikhaERAV2/ERAV2Session5/assets/160948226/d39c09bd-f820-4ae3-8c4c-6613e6c9b949)
 
+![image](https://github.com/ShikhaERAV2/Session6/assets/160948226/ca4b764d-2776-4776-bf7c-67fe1f9163ff)
 
 ## Model Description
-This is a 3 layers Convolutional Neural Network for digits identification trained on MNIST dataset. Added dropout and batch normalization.  
+This is a Multiple  convolution layers in Convolutional Neural Network for digits identification trained on MNIST dataset. Added dropout and batch normalization to improve the accuracy of the model.
+Batch normalization is added after couple of convolution layers and Dropout is added away from the last layer
 
 ## Code Structure 
-- `Session6_EVA2_Shikha.ipynb`: The main Jupyter Notebook contains the code to load data in train and test datasets -> transform data-> load model (defined in model.py)-> train  model -> test the model -> Check the accuracy of the model thus trained. 
-- `model.py`: This file contains the definition of the model. Basic architecture of the model is defined with 3 convolution layers and fully connected layers. 
+- `S6_Final.ipynb`: The main Jupyter Notebook contains the code to load data in train and test datasets -> transform data-> load model (defined in model.py)-> train  model -> test the model -> Check the accuracy of the model thus trained. 
+- `model.py`: This file contains the definition of the model. Basic architecture of the model is defined with multiple convolution layers and fully connected layers. 
 - `utils.py`: This file contains the utility functions like display of the sample data images and plotting the accuracy and loss during training. 
 
 ## Requirements
@@ -59,10 +60,16 @@ This is a 3 layers Convolutional Neural Network for digits identification traine
 - Matplotlib
 
 ## Model Accuracy
-- Accuracy=99.07%
-- Average loss: 0.0286
-- epochs = 10
-![image](https://github.com/ShikhaERAV2/Session6/assets/160948226/65dd6c16-08e4-42ec-abbc-5eddc68dfee8)
+- Test Accuracy = 99.23%
+- Average loss = 0.0237
+  
+- Training accuracy =  99.75%
+- Average Loss = 0.0019
+- epochs = 19
+
+![image](https://github.com/ShikhaERAV2/Session6/assets/160948226/f256495d-fc4a-401d-82c5-83d3589764da)
+
+
 
  
 
